@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="mapDiv">
+    <div id="HomeButtonDiv"></div>
+    <div id="LocateButtonDiv"></div>
+    <div id="measurementButton">
+        <i class="fa-solid fa-pen-ruler"></i>
+    </div>
+    <div id="searchButton">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <div class="card card-panel no-width" id="measurementContainer">
+        <h5 class="card-header">Công cụ đo</h5>
+        <div class="card-body">
+            <div id="measurementDiv"></div>
+        </div>
+    </div>
+
+    <div class="card card-panel no-width" id="searchContainer">
+        <h5 class="card-header">Tìm kiếm thông tin</h5>
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Tên tỉnh: </label>
+                <input type="text" class="form-control" id="txtName" placeholder="Nhập tên tỉnh muốn tìm">
+            </div>
+
+            <div class="form-group">
+                <button type="button" class="btn btn-primary" id="btnSearch">Tìm</button>
+            </div>
+
+            <div class="form-group">
+                <h6 class="text-danger" id="txtMessage"></h6>
+            </div>
+        </form>
+
+        <div class="form-group">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Tên tỉnh</th>
+                        <th>Năm 2016</th>
+                        <th>Năm 2017</th>
+                        <th>Năm 2018</th>
+                        <th>Năm 2019</th>
+                        <th>Năm 2020</th>
+                        <th>Năm 2021</th>
+                        <th>Tỉ lệ tăng trung bình</th>
+                    </tr>
+                </thead>
+                <tbody id="searchResults">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
