@@ -90,7 +90,7 @@ body {
     bottom: 145px;
 }
 
-#measurementButton {
+/*#measurementButton {
     position: absolute;
     z-index: 999;
     right: 15px;
@@ -102,13 +102,13 @@ body {
     line-height: 32px;
     border: 1px solid #eae5e5;
     cursor: pointer;
-}
+}*/
 
 #searchButton {
     position: absolute;
     z-index: 999;
     right: 15px;
-    bottom: 215px;
+    bottom: 180px;
     width: 32px;
     height: 32px;
     background-color: #fff;

@@ -64,6 +64,7 @@ require(["esri/map", "esri/Color", "esri/dijit/HomeButton", "esri/dijit/LocateBu
         //Khởi tạo layer bản đồ trên gis online vào
         var DanSo = new FeatureLayer(linkDanSo, {
             mode: FeatureLayer.MODE_ONDEMAND,
+            opacity: 1,
             outFields: ["*"]
         });
         //DanSo.setRenderer(DanSoRenderer);
